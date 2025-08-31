@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title> Sobre Mim </title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<!-- Usando o Javascrpit para mensagem de boas vindas -->
+<script>
+  window.onload = function() {
+    const hora = new Date().getHours();
+    let mensagem;
+
+    if (hora < 12) 
+      {mensagem = "Bom dia";}
+    else if (hora < 18) 
+      {mensagem = "Boa tarde";} 
+    else 
+      {mensagem = "Boa noite";}
+
+    alert(`${mensagem}, Seja bem-vindo !`);
+  }
+</script>
+
+<body>
+  <header> <!-- Criando o cabeçalho -->
+    <h1 class="port">Meu Portfólio</h1>
+    <nav> <!-- Navegação entre todas as páginas -->
+      <ul>
+        <li><a href="index.html">Sobre Mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+
+  <div class="info">
+      <!-- Adicionando imagem -->
+      <img src="Imagens/bio.webp" alt="Imagem desenho" class="bio">
+      <div class="textobio"> <br>
+        <p class="sob"><strong>Oque faço:</strong> <br> Trabalho no ramo da logística e estudo na UNINTER </p>
+        <p class="sob"> <strong> Data de Nascimento:</strong> 27/09/1999 </p> 
+        
+        <hr class="linha">
+
+        <p class="sob2"> Olá mundo ! Meu nome é <strong> Patrick Gabriel de Sousa Monteiro </strong> atualmente tenho 25 anos mais irei fazer 26 mês que vem, estudo na universidade <strong>UNINTER</strong>  realizando o curso de Análise e Desenvolvimento de Sistemas, e este é o meu trabalho de desenvolvimento Web. <br> Estou gostando muito desse curso e estou empolgado, sempre algo novo para aprender e estudar. Já tenho algumas ideias da área que irei me especializar como por exemplo desenvolvimento WEB, Banco de dados entre outros. <br> Tenho também vários hobbies que gosto de fazer no meu tempo livre e descreverei eles em uma lista abaixo: </p>
+        
+      <!-- Lista para Hobbies-->
+      <ol class="hobbies">
+        <li>Jogar Videogame.</li>
+        <li>Assistir séries, filmes e animes.</li>
+        <li>Ler HQS.</li>
+        <li>Acompanhar futebol, Fórmula 1 e outros esportes.</li>
+        <li>Ouvir música e podcast.</li>
+      </ol> 
+
+      <!-- Adicionando Imagens dos hobbies -->
+        <div class="hob">
+          <img src="Imagens/videogame.jpg" alt="Videogame">
+          <img src="Imagens/assistindo.jpg" alt="Assistindo">
+          <img src="Imagens/futebol.jpg" alt="Futebol">
+          <img src="Imagens/music.jpg" alt="Musica">
+        </div>
+   
+    </div>
+  </div>
+ </section>
+</main>
+
+<!--Rodapé-->
+<footer>
+    <p> ¨ Patrick Gabriel de Sousa Monteiro - Trabalho Fundamentos da Programação WEB ¨</p>
+  </footer>
+
+</body>
+</html>
